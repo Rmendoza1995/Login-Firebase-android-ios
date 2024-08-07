@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="loginM.Views.bebidas"
+             xmlns:source="clr-namespace:loginM.Helpers"
+  Title="Bebidas">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand">
+
+            <Grid VerticalOptions="FillAndExpand"
+                 >
+                <Grid.RowDefinitions>
+                    <RowDefinition  />
+                    <RowDefinition />
+                    <RowDefinition  />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+
+
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.bebidas.cerveza.jpg}"
+                   Grid.Row="0"  Grid.Column="0"
+                             CornerRadius="10"
+               Aspect="AspectFill"
+               HeightRequest="200"
+               WidthRequest="200"                    
+                   HorizontalOptions="Center"
+                   Margin="20"
+                             
+                   />
+                <Label   Text="Cervezas" FontAttributes="Bold, Italic" FontSize="15" TextColor="CornflowerBlue" HorizontalOptions="Center"  VerticalOptions="End" />
+
+
+
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.bebidas.jugos.jpg}"
+                   Grid.Row="0"  Grid.Column="1"
+                             CornerRadius="10"
+               Aspect="AspectFill"
+               HeightRequest="200"
+               WidthRequest="200"                    
+                   HorizontalOptions="Center"
+                   Margin="20"
+                             
+                   />
+                <Label   Grid.Row="0" Grid.Column="1" Text="Jugos" HorizontalOptions="Center"  VerticalOptions="End" FontAttributes="Bold, Italic"  FontSize="15" TextColor="CornflowerBlue"  />
+
+
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.bebidas.refrescos.jpg}"
+                   Grid.Row="1"  Grid.Column="0"
+                             CornerRadius="10"
+               Aspect="AspectFill"
+               HeightRequest="200"
+               WidthRequest="200"                    
+                   HorizontalOptions="Center"
+                   Margin="20"
+                             
+                   />
+                <Label   Grid.Row="1" Grid.Column="0" Text="Refrescos" HorizontalOptions="Center"  VerticalOptions="End" FontAttributes="Bold, Italic"  FontSize="15" TextColor="CornflowerBlue"  />
+
+               
+
+            </Grid>
+
+            <ImageButton Source="{source:ImageResource loginM.Resources.images.logo.png}"
+                CornerRadius="10"
+                Aspect="AspectFill"
+                HeightRequest="200"
+                WidthRequest="200"                    
+                HorizontalOptions="Center"
+                Margin="20"
+                             
+                   />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

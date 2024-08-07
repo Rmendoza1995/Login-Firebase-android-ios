@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\images\bebidas.jpg" />
+    <None Remove="Resources\images\bebidas\cerveza.jpg" />
+    <None Remove="Resources\images\bebidas\jugos.jpg" />
+    <None Remove="Resources\images\bebidas\refrescos.jpg" />
+    <None Remove="Resources\images\comida.jpg" />
+    <None Remove="Resources\images\comida\g1.jpg" />
+    <None Remove="Resources\images\comida\q1.jpg" />
+    <None Remove="Resources\images\comida\t1.jpg" />
+    <None Remove="Resources\images\comida\t2.jpg" />
+    <None Remove="Resources\images\kratos.jpg" />
+    <None Remove="Resources\images\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\images\bebidas.jpg" />
+    <EmbeddedResource Include="Resources\images\bebidas\cerveza.jpg" />
+    <EmbeddedResource Include="Resources\images\bebidas\jugos.jpg" />
+    <EmbeddedResource Include="Resources\images\bebidas\refrescos.jpg" />
+    <EmbeddedResource Include="Resources\images\comida.jpg" />
+    <EmbeddedResource Include="Resources\images\comida\g1.jpg" />
+    <EmbeddedResource Include="Resources\images\comida\q1.jpg" />
+    <EmbeddedResource Include="Resources\images\comida\t1.jpg" />
+    <EmbeddedResource Include="Resources\images\comida\t2.jpg" />
+    <EmbeddedResource Include="Resources\images\kratos.jpg" />
+    <EmbeddedResource Include="Resources\images\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\bebidas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\comida.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\vistacomida.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

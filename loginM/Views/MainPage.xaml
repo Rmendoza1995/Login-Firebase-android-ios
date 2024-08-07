@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="loginM.MainPage"
+             xmlns:source="clr-namespace:loginM.Helpers"
+             Title="Login">
+
+    <StackLayout VerticalOptions="Center"
+                 Margin="15,0,15,0"
+                 Spacing="10">
+        <Image Source="{source:ImageResource loginM.Resources.images.kratos.jpg}"
+               Aspect="AspectFill"
+               HeightRequest="200"
+               WidthRequest="200"
+               HorizontalOptions="Center"/>
+        <Frame
+            BorderColor="LightGray">
+            <StackLayout>
+                <Entry x:Name="usuario" Placeholder="Nombre de usuario" FontSize="Large"
+                       Keyboard="Email"/>
+                <Entry x:Name="contrasenia" Placeholder="Contraseña" 
+                       IsPassword="True"/>
+                <Button x:Name="guarda" Text="Login"
+                        CornerRadius="10"
+                        Clicked="guarda_Clicked"/>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

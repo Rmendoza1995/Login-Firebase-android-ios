@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="loginM.Views.HomePage"
+             xmlns:source="clr-namespace:loginM.Helpers"
+             Title="Menú">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Iniciar Sesion"
+                     Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout >
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.comida.jpg}"
+                           Clicked="ImageButton_Clicked_1" 
+                           Aspect="AspectFill"
+                           HeightRequest="200"
+                           WidthRequest="200"                    
+                           HorizontalOptions="Center"
+                           Margin="20"
+                           />
+                <Label Text="Ver Comida" HorizontalOptions="Center" FontAttributes="Bold, Italic" FontSize="Medium" ></Label>
+
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.bebidas.jpg}"
+                             Clicked="ImageButton_Clicked"
+                             Aspect="AspectFill"
+                             HeightRequest="200"
+                             WidthRequest="200"                    
+                             HorizontalOptions="Center"
+                             Margin="20"
+                               />
+                <Label Text="Ver Bebidas" HorizontalOptions="Center" FontAttributes="Bold, Italic" FontSize="Medium" ></Label>
+
+
+
+                <ImageButton Source="{source:ImageResource loginM.Resources.images.logo.png}"
+                             CornerRadius="10"
+                            Aspect="AspectFill"
+                           HeightRequest="200"
+                           WidthRequest="200"                    
+                   HorizontalOptions="Center"
+                   Margin="20"
+                             
+                   />
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

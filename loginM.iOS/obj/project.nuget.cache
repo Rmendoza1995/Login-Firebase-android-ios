@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wLuGGk8K8+vhtTyjIiDlrFzd73h1MP+nNa0TPgcOiRa7LQrXcJaUW4i4XZl02uLs0OXW15FTKnOCEqKpfu221g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\valsisdes1\\Source\\repos\\loginM\\loginM.iOS\\loginM.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\valsisdes1\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
+    "C:\\Users\\valsisdes1\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}
